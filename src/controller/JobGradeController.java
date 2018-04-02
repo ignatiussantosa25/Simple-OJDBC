@@ -49,8 +49,11 @@ public class JobGradeController implements ControllerInterface{
     
     public boolean update(String gradeLevel,
             int lowSal, int higSal){
-        JobGrade grade = new 
-        JobGrade(gradeLevel, lowSal, higSal);
+        JobGrade grade = new JobGrade();
+//        JobGrade(gradeLevel, lowSal, higSal);
+                grade.setGradeLevel(gradeLevel);
+                grade.setLowestSalary(lowSal);
+                grade.setHighestSalary(higSal);
         return jgdao.update(grade);
     }
 
