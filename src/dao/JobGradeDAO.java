@@ -38,7 +38,7 @@ public class JobGradeDAO{
     /**
     * Fungsi untuk melihat data JobGrade dengan inputan
     * tertentu 
-    * @param cari String
+    * @param gradeLevel  String
     * @return data JobGrade
     */
     public JobGrade getByGradeLevel(String gradeLevel){
