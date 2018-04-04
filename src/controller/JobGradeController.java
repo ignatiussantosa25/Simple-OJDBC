@@ -85,8 +85,7 @@ public class JobGradeController implements ControllerInterface{
         
     }
  
-    private void bindingTable(JTable table, 
-            String[] header, List<JobGrade> datas){
+    private void bindingTable(JTable table, String[] header, List<JobGrade> datas){
         DefaultTableModel model = 
                 new DefaultTableModel(header, 0);
         for (JobGrade data : datas) {
